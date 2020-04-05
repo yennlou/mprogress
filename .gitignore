@@ -1,0 +1,15 @@
+# VisualStudioCode
+.vscode
+
+# VisualStudioCode Patch
+.history
+
+# Dependency directories
+node_modules/
+
+# Build
+lib/
+esm/
+
+# Others
+package-lock.json
