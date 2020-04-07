@@ -1,10 +1,4 @@
 {
-  "__docs": [
-    "https://babeljs.io/docs/en/options",
-    "https://babeljs.io/docs/en/babel-preset-env",
-    "https://babeljs.io/docs/en/babel-preset-react",
-    "https://babeljs.io/docs/en/babel-plugin-transform-runtime"
-  ],
   "presets": [
     "@babel/preset-env",
     "@babel/preset-react"

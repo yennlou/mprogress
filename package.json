@@ -12,7 +12,16 @@
     "esm"
   ],
   "scripts": {
-    "clean": "rm -rf esm lib"
+    "test": "jest",
+    "clean": "rm -rf esm lib",
+    "build:lib": "cross-env BABEL_ENV=commonjs src -d lib --ignore **/*.stories.js",
+    "build:esm": "cross-env BABEL_ENV=esm src -d esm --ignore **/*.stories.js",
+    "storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook"
+  },
+  "peerDependencies": {
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1"
   },
   "devDependencies": {
     "@babel/cli": "^7.8.4",
@@ -20,8 +29,14 @@
     "@babel/plugin-transform-runtime": "^7.9.0",
     "@babel/preset-env": "^7.9.0",
     "@babel/preset-react": "^7.9.4",
+    "@storybook/addon-actions": "^5.3.18",
+    "@storybook/addon-links": "^5.3.18",
+    "@storybook/addons": "^5.3.18",
+    "@storybook/react": "^5.3.18",
     "babel-eslint": "^10.1.0",
     "babel-jest": "^25.2.6",
+    "babel-loader": "^8.1.0",
+    "cross-env": "^7.0.2",
     "eslint": "^6.8.0",
     "eslint-config-standard": "^14.1.1",
     "eslint-config-standard-react": "^9.2.0",
