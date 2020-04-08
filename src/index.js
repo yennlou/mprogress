@@ -1,5 +1,5 @@
-import { ProgressBar } from './ProgressBar.component'
-import { ProgressWrapper, ProgressInner } from './ProgressBar.styles'
+import { ProgressBar } from './ProgressBar/ProgressBar.component'
+import { ProgressWrapper, ProgressInner } from './ProgressBar/ProgressBar.styles'
 
 export default ProgressBar
 export {
