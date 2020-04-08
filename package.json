@@ -11,6 +11,8 @@
     "lib",
     "esm"
   ],
+  "main": "lib/index.js",
+  "module": "esm/index.js",
   "scripts": {
     "test": "jest",
     "clean": "rm -rf esm lib",
@@ -21,7 +23,8 @@
   },
   "peerDependencies": {
     "react": "^16.13.1",
-    "react-dom": "^16.13.1"
+    "react-dom": "^16.13.1",
+    "styled-components": "^5.1.0"
   },
   "devDependencies": {
     "@babel/cli": "^7.8.4",
